@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'bauhaus-93';
+    src: 
+        local('bauhaus-93'),
+        url('./bauhaus-93.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: 
+        url('../fonts/Raleway-VariableFont_wght.ttf');
+    font-display: swap;
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+
+
+

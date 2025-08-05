@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/favicon.png" sizes="any">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+</head>
+<body class="page">
+    <header class="header">
+        <a class="header__title" aria-label="Логотип">
+            <span class="header__title_logo">JOE’S LIBRARY</span>
+        </a>
+        <form class="form">
+            <label for="search-input" class="visually-hidden">search</label>
+            <input type="search" id="search-input" class="search-input" placeholder="Поиск...">
+            <button type="submit" class="button form_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.625 16.625a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM18.375 18.375l-3.806-3.806" />
+                </svg>
+            </button>
+        </form>
+        <nav class="text header_menu">
+            <ul class="header_menu_list">
+                <li class="header_menu_list_item"><a href="#">About</a></li>
+                <li class="header_menu_list_item"><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="button header_button">Sign up</button>
+        </nav>
+    </header>
+    <main class="main_content">
+        <section class="cover">
+            <div class="contain_text">
+                <h1 class="contain_cover_title"> HEY, WELCOME TO <span class="cover_title_accent">JOE’S</span></h1>
+                <p class="text contain_cover_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt </p>
+                <div class="cover_button_contain">
+                    <button class="button cover_button cover_button_type_transparent" type="button">Get Started</button>
+                    <button class="button cover_button cover_button_type_dark" type="button">Explore More</button>
+                </div>
+            </div>
+            <div class="cover_container_img">
+            <img class="contain_cover_images" src="./images/cover_images.png" 
+                alt="На изображении представлен 3D-аватар мужчины с бородой и усами коричневого цвета. У него короткие каштановые волосы, очки в круглой оправе.">
+            </div>
+            </section>
+    </main>
+</body>
+</html>

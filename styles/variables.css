@@ -1,0 +1,35 @@
+:root{
+    /*цвета*/
+    --form_button_background-color: #A4B2FECC;
+    --color_main_text: #000;
+    --color_text: #fff;
+    --contain_cover_images_background-color:#899cff;
+/*границы тени ширина*/
+   --border: 1px solid #000;
+   --cover_container_img_border: 2px solid #000;
+   --contain_cover_img_width:  clamp(15rem, 10.1898rem + 22.6364vw, 30.5625rem);
+   --text-shadow_cover: 
+   3px -8px 0px #9ebdff,
+   -2px -2px 11px #000000, 
+   -5px 2px 8px #173469, 
+   2px -2px 0 #000000; 
+   --text-shadow_cover_accent: 1px -6px 0px #3e7cff, 
+   -1px 0px 15px #06081f, 
+   -5px 2px 8px #032c77, 
+   7px -3px 10px #000000;
+/*размеры*/
+   --header__title_font-size:  1.5rem;
+   --font-size_text:  1.25rem; 
+/*шрифт*/
+   --font-family: 'Raleway', sans-serif;
+   --cover_title_font-size:  clamp(3.5rem, 3.075rem + 2vw, 4.875rem);
+   --font-family_contain_cover_title: 'bauhaus-93';
+   --contain_cover_title_font-size: 4.75rem;
+/*отступы*/
+   --border-radius: 50px;
+   --border-radius_images:  50%;
+   --main_content_margin-inline: clamp(1rem, -2.2841rem + 15.4545vw, 11.625rem);
+/*обводка текста*/
+/*градиэнт*/
+   --background-image: linear-gradient(#FFD4FB99, #CAD0EF, #FFEE9333, #CAD0EF);
+}

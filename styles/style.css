@@ -1,0 +1,161 @@
+.page{
+    min-inline-size: 320px;
+    min-block-size: 100dvb; 
+    display: flex;
+    flex-direction: column;
+    gap: 134px;
+    align-items: center;
+    position: relative;
+}
+.page::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: var(--background-image, linear-gradient(#FFD4FB99, #CAD0EF, #FFEE9333, #CAD0EF));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+/*шапка сайта*/
+.header{
+    display: flex;
+    align-items: center;
+    gap: 87px;
+    padding-inline:  clamp(1.4375rem, 0.7227rem + 3.3636vw, 3.75rem);
+    padding-block:  clamp(1.5rem, 1.1909rem + 1.4545vw, 2.5rem);
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+.header__title{ 
+    font-size:  var(--header__title_font-size,  1.5rem);
+}
+/*поиск*/
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.search-input{
+    border: none;
+    border: 0.5px solid #000;
+    border-radius: var(--border-radius, 50px);
+    background-color: transparent;
+    width:  clamp(16rem, 11.8273rem + 19.6364vw, 29.5rem);
+    padding: 9px;
+}
+.search-input:hover{
+    border: 3px solid #12306b99;
+    color: #3e7cff;
+}
+/*общие стили для кнопок на всей странице*/
+.button{
+    border: none;
+    border-radius: var(--border-radius, 50px);
+    cursor: pointer;
+    font-family: var(--font-family,'Raleway', sans-serif);
+}
+.form_button{
+    background-color: var(--form_button_background-color, #A4B2FECC);
+    cursor: pointer;
+}
+.text{
+    font-size: var(--font-size_text,  1.25rem);
+    font-family: var(--font-family, 'Raleway', sans-serif);
+}
+.header_menu{
+    display: flex;
+}
+.header_menu_list{
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    margin-inline-end: 23px;
+}
+.header_button{
+    padding-inline:12px ;
+    padding-block: 10px 15px;
+    background-color: #A5B3FF;
+    color: #fff;
+    border-radius: 0px;
+}
+/*блок с главным контентом*/
+.main_content{
+    margin-inline: var(--main_content_margin-inline, clamp(1rem, -2.2841rem + 15.4545vw, 11.625rem));
+}
+/*входная секция*/
+.cover{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 141px;
+}
+/*блок с текстом*/
+.contain_text{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.contain_cover_title{
+   font-size: var(--cover_title_font-size,  clamp(3.5rem, 3.075rem + 2vw, 4.875rem));
+   font-family: var(--font-family_contain_cover_title, 'bauhaus-93');
+   color: transparent;
+   text-shadow: var(--text-shadow_cover, 3px -8px 0px #9ebdff, -2px -2px 11px #000000, -5px 2px 8px #173469, 2px -2px 0 #000000); 
+}
+.cover_title_accent{
+    text-shadow:var(--text-shadow_cover_accent, 1px -6px 0px #3e7cff, -1px 0px 15px #06081f, -5px 2px 8px #032c77, 7px -3px 10px #000000);
+} 
+/*блок с кнопками*/
+.cover_button_contain{
+    display: flex;
+    gap: 27px;
+}
+/*общие стили для кнопок в блоке cover*/
+.cover_button{
+    padding-inline: clamp(1rem, 0.4977rem + 2.3636vw, 2.625rem); 
+    padding-block: clamp(0.875rem, 0.6818rem + 0.9091vw, 1.5rem);
+    background-color: transparent;
+    border: var( --border, 1px solid #000);
+}
+.cover_button_type_transparent{
+    background-color: transparent;
+}
+/*при наведении когда кнопки активны стили*/
+.cover_button_type_transparent:hover{
+    background-color: #000;
+    color:var(--color_text, #fff);
+}
+.cover_button_type_dark{
+    background-color:var( --color_main_text, #000);
+    color: var(--color_text, #fff);
+}
+.cover_button_type_dark:hover{
+    background-color: #fff;
+    color:var( --color_main_text, #000);
+}
+.cover_container_img{
+    padding: 23px;
+}
+.contain_cover_images{
+    background-color:var(--contain_cover_images_background-color, #899cff);
+    border-radius: var( --border-radius_images,  50%);
+    width: var( --contain_cover_img_width,  clamp(15rem, 10.1898rem + 22.6364vw, 30.5625rem));
+}
+.svg_cover{
+    grid-column: 2;
+}
+/* медиазапрос при ширине окна просмотра меньше 1024px */
+@media (width <=1024px) {
+.header, .header_menu{
+    flex-direction: column;
+    gap: 34px;
+}
+.cover{
+    justify-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+.cover_button_contain{
+    flex-direction: column;
+}
+}
